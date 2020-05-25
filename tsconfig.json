@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "outDir": "./built/",
     "target": "esnext",
     "module": "esnext",
     "strict": true,
@@ -10,7 +11,13 @@
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "sourceMap": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
     "baseUrl": ".",
+    "typeRoots": [
+      "./node_modules/@types",
+      "./node_modules/@coreui/icons"
+    ],
     "types": [
       "webpack-env"
     ],
